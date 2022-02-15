@@ -153,7 +153,7 @@ div.all-documents > h6, div.col-lg-6 > h6, div.row h6, .receipt-grand-total {
     height: 7rem;
     border-radius: 7rem;
     /* border: 1rem dashed crimson; */
-    border: 1rem dashed #0b8bf4;
+    border: 0.5rem dashed #0b8bf4;
     padding: 2rem 0;
     margin: 0 auto;
 }

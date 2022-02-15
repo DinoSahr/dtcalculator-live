@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block SiteRootContent %}
+<h3>DinoSahr Tip Calculator Web Application.</h3>
+
+<div class="graphic" style="width: 100%; border: 1px solid #dee2e6; border-right: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-top-width: 0.2rem;">
+    <div class="shifter" style="padding: 1rem 0.5rem;">
+        <div class="container text-center home">
+            <h6 class="text-center">New Receipt Entry Information</h6>
+            <hr>   
+        </div>
+        <div class="row display-container">
+            
+            <div class="col-lg-4 total-before-tip">
+                <h5 class="text-center">Final Total Before Tip</h5>
+                <hr>
+                <h6 class="text-center">${{total_before_tip}}</h6>
+            </div>
+            <div class="col-lg-4 assigned-tip">
+                <h5 class="text-center">Tip Amount & Percentage</h5>
+                <hr>
+                <h6 class="text-center tip-amount-percent">${{tip_amount}} <br> <span>({{assigned_percent}})</span></h6>
+            </div>
+            <div class="col-lg-4 total-after-tip">
+                <h5 class="text-center">Final Total After Tip</h5>
+                <hr>
+                <h6 class="text-center">${{total_with_tip}}</h6>
+            </div>
+        </div>
+        <!-- <div class="divider-graphics"></div> -->
+        <!-- <div class="container all-documents">
+            <h5 class="title text-center">Number of Receipts</h5>
+            <hr>
+            {% if document_count == 0%}
+                <h6>{{document_count_error}}</h6>
+            {% else %}
+                <h6 class="text-center">{{document_count}}</h6>
+            {% endif %}
+        </div> -->
+    </div>
+</div>
+<div class="joinin-graphic" style="width: 100%;  border: 1px solid #dee2e6; border-top: 0; border-left: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-right-width: 0.2rem;">
+    <div class="shifter" style="padding: 1rem 0.5rem;">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table class="DTC-Layout">
+                <tbody>
+                    <tr>
+                        <td class="col-label">Enter Total On Your Receipt Here </td>
+                        <td class="col-figure">
+                            <input type="text" name="receipt-total-container" autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">Select Tip Percent between 15% and 20%</td>
+                        <td class="col-figure">
+                            <select name="tip-percent-container">
+                                <option class="tip-percent-options">SELECT TIP PERCENTAGE BELOW</option>
+                                <option class="tip-percent-options">15</option>
+                                <option class="tip-percent-options">16</option>
+                                <option class="tip-percent-options">17</option>
+                                <option class="tip-percent-options">18</option>
+                                <option class="tip-percent-options">19</option>
+                                <option class="tip-percent-options">20</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <button class="btn btn-outline-secondary" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

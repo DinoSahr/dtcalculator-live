@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block aboutUsContent %}
+    <h3>Our Story</h3>
+
+    <div class="graphic" style="width: 100%; border: 1px solid #dee2e6; border-right: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-top-width: 0.2rem;">
+        <div class="shifter" style="padding: 1rem 0.5rem;">
+
+            <h6>Purpose of this app</h6>
+            <p>
+                Though not enforced legally, but the allowed percentage limit on tipping in the Us is between 15-20%. Where Fifteen percent is considered the minimum of a decent tip, and 
+                Twenty percent considered excellent. When your tip value is over this limit, some Financial Institutions would send you a confirmation email to confrim you did surely intended on giving the amount you'd
+                given to your server or bartender as part of a tip for their service. And if you're me who usually get those confirmation email from your Financial Instution, then this app was built with you in 
+                mind. This app ensures that you're never over the maximum allowed tipping limits. Andy by now you'd probably be asking how?. Well all you need to do is enter total on your
+                receipt you get from your server or bartender. Then select the tip percentage you'd like to give between Fifteen Percent and Tweenty Percent, and hit the submit button, the app would provide
+                you with a tip amount base on the percentage you'd selected and the final total after the tip amount is applied. The app also provide you with a real time report of
+                the amount you'd spent on tips and your all your all time grand total spending from going out to bars and restaurants.
+            </p>
+        </div>
+    </div>
+    <div class="joinin-graphic" style="width: 100%;  border: 1px solid #dee2e6; border-top: 0; border-left: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-right-width: 0.2rem;">
+        <div class="shifter" style="padding: 1rem 0.5rem;">
+            <h6 class="text-center">Future Updates Ideas</h6>
+            <hr>
+            <p class="future-updates-statement">
+                Coming soon, you would be able to views reporting of your spending habits on a daily, weekly, monthly and yearly bases. This would allow myself or anyone using the app to track their spending at bars and restaurants.
+                Thus enabling myself or anyone using the app to make changes such as going out less or getting fewer drink while out, allowing myself or anyone using the app to reduce spending and boost thier savings.
+                I will also be implementing location service to the app later when I research the best services that won't cost an astronomical amount.
+            </p>
+        </div>
+    </div>
+    <div class="graphic" style="width: 100%; border: 1px solid #dee2e6; border-right: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-top-width: 0;">
+        <div class="shifter" style="padding: 1rem 0.5rem;">
+            <h6>What I learned during my Journey creating this app</h6>
+            <p>
+                When I first started out my journey to learning to code. I wanted to solve one real world challange I'd faced for the longest time. Which was creating an app 
+                that would calculate tip base on a percentage I choose, and calculating the final total with tips included, and never going over the allowed tipping limits. Within 
+                3 months of learning, I used the basics I'd learned to solve this challenge of mine. But as my skill sets grew as a programmer, I decided to update the app to include some backend database to store my receipts. 
+                I spent weeks researching the best resources to use based on my programming knowledge, my biggges challenge came up when deciding on the database type I'd like to use for storing my receipts, I decided on MongoDB becuase of it 
+                built in agregate functions which made it easy to create reports. I redesigned the entire app's interface using Python's web 
+                framework Django. I then used Pymongo along with Djongo as a preferred method of connecting to my MongoDB Database I'd created. I added the following programming skills under my belt Python, 
+                Django, Pymongo, Djongo, Bootstrap, Font Awesome, Google Fonts, and MongoDB. This project not only helped me expand my programming knowledge, but it challenged me to use different resource and 
+                integrate them together to attain my desired result for my app. I also learned how use the manual for each of the technologies used, and how to find resource 
+                when I was stuck. I created details document as a requirement guide to building django application and fixes to every errors I encountered during the duration of this project. Although some errors took hours and others days to research for a fix for the issue
+                I was able to create a manual to help with creating an app with django faster.
+            </p>
+           
+        </div>
+    </div>
+{% endblock %}

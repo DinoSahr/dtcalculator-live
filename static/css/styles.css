@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+table {
+    border: 1px solid #333;
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+form {
+    padding-top: 1rem;
+}
+
+.application-main-layout {
+    padding: 7% 10% 10%;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand span {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+
+    #home-tab, #profile-tab, #contact-tab, #reports-tab {
+        margin-left: 0;
+    }
+
+    .application-main-layout {
+        padding: 6rem 1rem 8rem;
+    }
+
+    .assigned-tip, .total-after-tip, .total-before-tip, .home, .total-spending {
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .app-name {
+        display: none;
+    }
+
+    .navbar-brand img {
+        width: 6rem;
+        height: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+input[type='text'], select {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
+    text-align: right;
+    font-weight: 900;
+}
+
+select {
+    font-weight: 100;
+    background: none;
+}
+
+input[type='text']:focus-visible, select:focus-visible {
+    outline: none;
+}
+
+footer {
+    background-color: #F1F1F1;
+}
+
+footer > .container {
+    padding: 1rem 10%;
+}
+
+td  {
+    border: 1px solid #333;
+    text-transform: uppercase;
+}
+
+td.col-figure {
+    width: 75%;
+    margin-left: 1rem;
+}
+
+td.col-label {
+    width: 40%;
+}
+
+.col-label, .col-figure {
+    margin-left: 1rem;
+}
+
+.tip-percent-options {
+    width: 100%;
+}
+
+.navbar-brand, a, h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar-brand, h3, h6 {
+    font-weight: 900;
+}
+
+a {
+    font-weight: 100;
+}
+
+#home-tab, #profile-tab, #contact-tab, #reports-tab {
+    margin-left: 1.5rem;
+    color: inherit;
+    font-weight: 100;
+}
+
+.total-spending {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.all-documents {
+    padding: 1rem 0;
+}
+
+.home, .all-documents {
+    padding: 2rem 0;
+}
+
+.row {
+    padding: 0 0 1rem;
+}
+
+div.all-documents > h6, div.col-lg-6 > h6, div.row h6, .receipt-grand-total {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+    /* border: 1rem dashed crimson; */
+    border: 1rem dashed #0b8bf4;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+h6.tip-amount-percent {
+    padding: 1.4rem 0 !important;
+}
+
+.tip-amount-percent span {
+    width: 100%;
+}
+
+

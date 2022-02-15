@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block ReportContent %}
+    <h3>Reports</h3>
+    
+    <div class="graphic" style="width: 100%; border: 1px solid #dee2e6; border-right: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-top-width: 0.2rem;">
+        <div class="shifter" style="padding: 1rem 0.5rem;">
+            <h6 class="text-center">Spending Report Summary</h6>
+            <hr>
+            <div class="container text-center home">
+                <h5>All Time Grand Total Spending</h5>
+                <hr>
+                <h6 class="receipt-grand-total text-center aggreation">${{grandTotalSpendings}}</h6>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 total-before-tip">
+                    <h5 class="text-center">Grand Total Before Tips</h5>
+                    <hr>
+                    <h6 class="text-center aggreation">${{grandtotalBeforeTips}}</h6>
+                </div>
+                <div class="col-lg-6 assigned-tip">
+                    <h5 class="text-center">Grand Total Paid On Tips</h5>
+                    <hr>
+                    <h6 class="text-center aggreation">${{grandtotalTipsPaid}}</h6>
+                </div>
+            </div>
+            <!-- <div class="divider-graphics"></div> -->
+            <div class="all-documents">
+                <h5 class="title text-center">Total Number of Receipts</h5>
+                <hr>
+                <h6 class="text-center">{{total_receipts}}</h6>
+            </div>
+        </div>
+    </div>
+    <div class="joining-graphic" style="width: 100%;  border: 1px solid #dee2e6; border-top: 0; border-left: 0; border-left-width: 0.2rem; border-bottom-width: 0.2rem; border-right-width: 0.2rem;">
+        <div class="shifter" style="padding: 1rem 0.5rem;">
+            <h6 class="text-center">Future Updates Ideas</h6>
+            <hr>
+            <p class="future-updates-statement">
+                Coming soon, you would be able to views reporting of your spending habits on a daily, weekly, monthly and yearly bases. This would allow myself or anyone using the app to track their spending at bars and restaurants.
+                Thus enabling myself or anyone using the app to make changes such as going out less or getting fewer drink while out, allowing myself or anyone using the app to reduce spending and boost thier savings.
+            </p>
+           
+        </div>
+    </div>
+    
+{% endblock %}

@@ -1,1 +1,1 @@
-web: gunicorn DTCalculator.wsgi
+web: gunicorn DinoSahrTipCalculator.wsgi

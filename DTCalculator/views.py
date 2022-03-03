@@ -1,15 +1,6 @@
-from cgitb import html
 from datetime import datetime
-from inspect import getcallargs
-from itertools import count
-from operator import gt
-import re
-from sqlite3 import Date
-from tokenize import group
-from django.http import QueryDict
 from django.shortcuts import render
 from .models import Receipts
-from decouple import config
 import pymongo
 
 # Create your views here.

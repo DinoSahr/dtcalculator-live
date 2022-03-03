@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=7-_4!f3v)g#e&&uhx0k#xw2&vy5!+s3b9s40+5l&hp&$nae36'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = False
 
 ALLOWED_HOSTS = ['dtcalculator.herokuapp.com', '127.0.0.1']
 

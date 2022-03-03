@@ -9,14 +9,14 @@ from tokenize import group
 from django.http import QueryDict
 from django.shortcuts import render
 from .models import Receipts
-
+from decouple import config
 import pymongo
 
 # Create your views here.
 
-DB_USER = 'dinosahrdesign'
-DB_PASS = 'Pmvsdz8bHuPYBk4w'
-AUTH_DB = 'dinosahrdb'
+DB_USER = config('DB_USER')
+DB_PASS = config('DB_PASS')
+AUTH_DB = config('AUTH_DB')
 
 
 total = ""

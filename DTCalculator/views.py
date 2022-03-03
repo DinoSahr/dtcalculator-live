@@ -14,9 +14,9 @@ import pymongo
 
 # Create your views here.
 
-DB_USER = config('DB_USER')
-DB_PASS = config('DB_PASS')
-AUTH_DB = config('AUTH_DB')
+DB_USER='dinosahrdesign'
+DB_PASS='Pmvsdz8bHuPYBk4w'
+AUTH_DB='dinosahrdb'
 
 
 total = ""

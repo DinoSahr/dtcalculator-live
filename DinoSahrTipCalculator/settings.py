@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'DinoSahrTipCalculator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DB_USER = config('DB_USER')
-DB_PASS = config('DB_PASS')
-AUTH_DB = config('AUTH_DB')
+DB_USER='dinosahrdesign'
+DB_PASS='Pmvsdz8bHuPYBk4w'
+AUTH_DB='dinosahrdb'
 
 DATABASES = {
         'default': {
